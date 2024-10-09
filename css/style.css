@@ -1,4 +1,5 @@
 :root {
+
     /* COLORS */
     --background-default: #F5F4F0;
     --border-primary: #D9D9D9;
@@ -16,11 +17,13 @@
     --accent-purple: #591B98;
 
     /* FONTS */
-    --font-primary: "'Open Sans', sans-serif";
+    --font-primary: "Open Sans", sans-serif;
+
     --font-size-base: 16px;
     --font-size-lg: 28px;
     --font-size-xl: 32px;
     --font-size-xxl: 36px;
+
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 }
@@ -31,10 +34,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--font-primary);
-    background-color: var(--text-secondary);
-}
 
 .about {
     width: 1200px;
@@ -48,34 +47,30 @@ body {
     margin-bottom: 40px;
 }
 
-.container .headline {
+.container span {
     display: block;
     text-transform: uppercase;
-    margin: 64px 0 8px;
+    margin-bottom: 8px;
+    margin-top: 64px;
     color: var(--text-headline);
 }
 
 h1 {
     font-size: var(--font-size-xxl);
-    color: var(--text-primary);
     text-transform: capitalize;
     margin-bottom: 40px;
 }
 
 h2 {
     font-size: var(--font-size-xl);
-    color: var(--text-primary);
 }
 
-p {
-    font-size: var(--font-size-base);
-    color: var(--text-tertiary);
-}
 
 .container img {
     width: 100%;
     object-fit: cover;
     border-radius: 28px;
+
 }
 
 .container + section {
@@ -96,57 +91,4 @@ h2 + p {
 .place-items img {
     object-fit: fill;
     height: 350px;
-}
-
-.place-items {
-    margin-bottom: 48px;
-}
-
-.place-items h3 {
-    margin: 20px auto 8px;
-    padding-left: 8px;
-}
-
-li + li + li {
-    color: var(--accent-orange);
-}
-
-li + li {
-    color: var(--accent-pink);
-}
-
-ul li::marker {
-    color: var(--text-tertiary);
-}
-
-ul, li {
-    color: var(--accent-purple);
-}
-
-ul > #historia {
-    color: var(--accent-blue);
-}
-
-ul {
-    padding-left: 28px;
-}
-
-li {
-    font-weight: var(--font-weight-bold);
-}
-
-.footer-text {
-    text-align: center;
-    font-size: var(--font-size-base);
-}
-
-.copyright {
-    display: block;
-    color: var(--text-tertiary);
-    text-align: center;
-    margin-top: 60px;
-}
-
-.copyright img {
-    vertical-align: baseline;
 }
